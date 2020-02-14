@@ -1,0 +1,57 @@
+composer implementa el auto cargado de archivos
+
+steps
+
+----------------------
+1- download composer -> file composer phar
+2- create file composer.json
+3- execute command: php composer.phar install
+
+-------------------------
+*************************
+install eloquent orm
+https://packagist.org/packages/illuminate/database
+*************************
+-------------------------
+3- execute command: php composer.phar require illuminate/database
+
+
+***************************
+---------------------------
+TIPS => nunca subir la carpeta vendor, para eso sirve composer install
+------------------------------
+****************************
+--------------------------------- => packagits
+psr-7 => routes
+
+zendframework/zend-diactoros
+install
+ 4- execute command: php composer.phar require zendframework/zend-diactoros
+ # Powerful, flexible web routing for PSR-7 requests.
+ 5- execute command: php composer-phar require aura/router
+-------------------------------
+
+------------------------------
+******************************
+Templates engines
+******************************
+------------------------------
+register => vulnerability =>  <script>alert("bienvenido atack"); </script>
+install twig/twig
+6- execute command: php composer.phar require twig/twig
+
+-----------------------------------
+validator
+--------------------------------
+respect/validation
+7- execute command: php composer.phar require respect/validation
+
+-----------------------------------------
+Variables de entorno
+------------------------------------------
+**********************************************
+Loads environment variables from `.env` to `getenv()`, `$_ENV` and `$_SERVER` automagically.
+8- execute command: php composer.phar require vlucas/phpdotenv
+
+
+

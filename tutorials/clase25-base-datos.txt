@@ -1,0 +1,47 @@
+--------------------------------------------------
+Manejo de base de datos -> for this project
+---------------------------------------------------
+
+create database cursophp;
+
+------------
+tables
+-------------
+create table jobs (
+    id int unsigned auto_increment not null,
+    title varchar(50) not null,
+    description varchar(100) not null,
+    visible boolean not null default false,
+    months int not null default 0,
+    logo_url varchar(50) not null,
+    created_at datetime not null,
+    updated_at datetime not null,
+    primary key (id)
+);
+
+create table projects (
+    id int unsigned auto_increment not null,
+    title varchar(50) not null,
+    description varchar(100) not null,
+    image_url varchar(100) not null default 'none',
+    created_at datetime not null,
+    updated_at datetime not null,
+    primary key (id)
+);
+
+
+create table users(
+	id int unsigned not null auto_increment,
+	name varchar(50) not null,
+	last_name varchar(50) not null,
+	document varchar(50) not null,
+	email varchar(100) not null,
+	password varchar(100) not null,
+	is_staff bool default false,
+	is_active bool default true,
+	created_at timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+   updated_at timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
+	unique (document),
+	unique (email),
+	primary key (id)
+);

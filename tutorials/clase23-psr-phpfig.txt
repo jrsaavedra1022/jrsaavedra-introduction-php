@@ -1,0 +1,4 @@
+https://www.php-fig.org/
+
+pagina para standares de php para trabajar mejor y tener interoperabilidad de nuestro código
+standar de auto-cargado de archivos

@@ -1,0 +1,38 @@
+{% extends 'layout.twig' %}
+
+{% block head_content %}
+    <title>Add User</title>
+{% endblock %}
+
+
+
+{% block container %}
+    <h1>register users</h1>
+    <div class="form-users">
+    <div class="alert alert-primary" role="alert">
+        {{ response_message }}
+    </div>
+        <form action="" method="POST">
+            <div class="row">
+                        <label for="">name:</label>
+                        <input type="text" name="name"  placeholder="name">
+                        <label for="">lastname:</label>
+                        <input type="text" name="lastname"  placeholder="lastname">
+            </div>
+            <div class="row">
+                        <label for="">document:</label>
+                        <input type="text" name="document"  placeholder="document user">
+                        <label for="">email:</label>
+                        <input type="email" name="email"  placeholder="example@ext.com">
+            </div>
+            <div class="row">
+                        <label for="">password:</label>
+                        <input type="password" name="password"  placeholder="password">
+                        <label for="">confirm-password:</label>
+                        <input type="password" name="passwordConfirm"  placeholder="confirm password">
+            </div>
+            <hr>
+            <button class="btn btn-success">Save</button>
+        </form>
+    </div>
+{% endblock %}
